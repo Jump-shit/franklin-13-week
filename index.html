@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f1e8" />
+  <title>13 Weeks of Franklin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div>
+        <p class="eyebrow">13 WEEKS OF FRANKLIN</p>
+        <h1>One day at a time.</h1>
+      </div>
+      <div class="date-box">
+        <span id="weekday">—</span>
+        <strong id="date">—</strong>
+      </div>
+    </header>
+
+    <section class="progress-card">
+      <div class="progress-heading">
+        <div>
+          <span class="label">CURRENT WEEK</span>
+          <h2 id="weekTitle">Week 1</h2>
+        </div>
+        <span id="weekRange" class="muted">—</span>
+      </div>
+      <div class="progress-track">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+      <div class="progress-meta">
+        <span id="progressText">0 / 7 days completed</span>
+        <span id="totalText">0 / 91 total days</span>
+      </div>
+    </section>
+
+    <section class="quote-card">
+      <div class="quote-top">
+        <span id="weekNumber" class="pill">WEEK 01</span>
+        <span id="daysLeft" class="muted">7 days</span>
+      </div>
+      <blockquote id="quote">—</blockquote>
+      <p class="author">Benjamin Franklin</p>
+      <p id="meaning" class="meaning">—</p>
+    </section>
+
+    <section class="habit-card">
+      <div class="section-title">
+        <div>
+          <span class="label">TODAY</span>
+          <h2>Did you live by it?</h2>
+        </div>
+        <span id="todayStatus" class="status">Not completed</span>
+      </div>
+
+      <button id="completeButton" class="complete-button" type="button">
+        <span id="checkIcon" class="check-icon">✓</span>
+        <span id="buttonText">Mark today as complete</span>
+      </button>
+
+      <p class="save-note">Your progress is saved automatically on this device.</p>
+    </section>
+
+    <section class="calendar-card">
+      <div class="section-title">
+        <div>
+          <span class="label">THIS WEEK</span>
+          <h2>Daily progress</h2>
+        </div>
+      </div>
+      <div id="daysGrid" class="days-grid"></div>
+    </section>
+
+    <section class="weeks-card">
+      <div class="section-title">
+        <div>
+          <span class="label">THE JOURNEY</span>
+          <h2>13 principles</h2>
+        </div>
+      </div>
+      <div id="weeksList" class="weeks-list"></div>
+    </section>
+
+    <footer>
+      <p>“An investment in knowledge pays the best interest.” — Benjamin Franklin</p>
+      <button id="resetButton" class="reset-button" type="button">Reset all progress</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
